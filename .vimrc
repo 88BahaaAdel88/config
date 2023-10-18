@@ -2,8 +2,7 @@
 set autoindent
 set smartindent
 set cindent
-" set termguicolors
-colorscheme gruvbox
+set termguicolors
 filetype on
 set nocompatible
 set nu
@@ -68,7 +67,6 @@ Plug 'rhysd/vim-clang-format'
 Plug 'kana/vim-operator-user'
 Plug 'vim-indent/vim-indent'
 call plug#end()
-"colorscheme codedark
 
 
 "custom mapping
@@ -132,3 +130,9 @@ function CloseNetRW()
     nnoremap <Tab> :call OpenNetRW()<CR>
 endfunction
 
+"colorschemes
+"colorscheme gruvbox
+"colorscheme codedark
+colorscheme molokai
+let g:molokai_original = 1
+let g:rehash256 = 1
